@@ -6,15 +6,21 @@
 <div id="d"></div>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-#button {
+ body
+#d {
 background-color: #444;
 font-family: 'Great Vibes', cursive;
 }
+  @keyframes animation1 {
+    0%{translate: rotate(0deg); background: #444;} 
+    100%{translate: rotate(360deg);  background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);}
+    
+  }
 
 
 </style>
 <script>
-function help(){document.getElementById("d").innerHTML = "ALYSSA IS STOOPID :("};
+function help(){document.getElementById("d").innerHTML = "ALYSSA IS STOOPID :("; document.getElementById("d").style.animation = "animation1 0.5s forwards"};
 </script>
 
 
